@@ -14,4 +14,4 @@ This application was developed above a challenge proposed by the website
 😎 Alexsandro Gomes Paiva
 
 - Github: [@alexsandrogms](https://github.com/Alexsandrogms)
-- Linkedin: [@alexsandrogms](linkedin.com/in/alexsandrogomes)
+- Linkedin: [@alexsandrogms](https://linkedin.com/in/alexsandrogomes)

@@ -1,0 +1,461 @@
+@import url("https://fonts.googleapis.com/css?family=Inter&display=swap");
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  overflow-x: hidden;
+}
+
+/* * Light theme  */
+
+body {
+  background: hsl(0, 0%, 100%);
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 220px;
+  background: hsl(225, 100%, 98%);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+}
+
+.container .followers {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
+}
+
+.container .followers .header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding-bottom: 20px;
+}
+
+.container .followers .card {
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+  height: 200px;
+  margin: 10px 0;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  background: hsl(227, 47%, 96%);
+}
+
+.container .followers .card:hover {
+  background: hsl(0, 0%, 81%);
+}
+
+.container .followers .card:nth-child(2) {
+  border-top: 5px solid hsl(195, 100%, 50%);
+}
+.container .followers .card:nth-child(3) {
+  border-top: 5px solid hsl(203, 89%, 53%);
+}
+.container .followers .card:nth-child(4),
+.dark .container .followers .card:nth-child(4) {
+  height: 205px;
+  box-sizing: border-box;
+  background-position: 0 -10px;
+  background-repeat: no-repeat;
+  background-size: 100% 7%;
+  background-image: linear-gradient(
+    to right,
+    hsl(37, 97%, 70%) 0%,
+    hsl(329, 70%, 58%) 100%
+  );
+}
+
+.container .followers .card:nth-child(5) {
+  border-top: 5px solid hsl(348, 97%, 39%);
+}
+
+.container .followers .card p:nth-child(1) {
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+  color: hsl(230, 17%, 14%);
+}
+
+.container .followers .card p:nth-child(3) {
+  margin: -5px 0 15px 0;
+  font-size: 20px;
+}
+
+.container .followers .card h2 {
+  color: hsl(230, 17%, 14%);
+  font-size: 50px;
+  padding: 0;
+  margin: 17px 0 0 0;
+}
+
+.container .followers .card p,
+span {
+  margin: 0;
+  padding: 0;
+  color: hsl(228, 12%, 44%);
+}
+
+.container .followers .card .up,
+.overview .mincard .up {
+  color: #07e269;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.container .followers .card .down,
+.overview .mincard .down {
+  color: #ff0000;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.container .followers .card img,
+.overview .mincard img {
+  padding-right: 3px;
+}
+
+.container .followers .header .button {
+  display: flex;
+  align-items: center;
+}
+
+.container .followers .header .button p {
+  margin-right: 10px;
+  font-size: 12px;
+  font-weight: 700;
+  color: hsl(228, 12%, 44%);
+}
+
+.container .followers .header .title {
+  word-wrap: break-word;
+  width: 39%;
+}
+
+.container .followers .header .title p span {
+  font-weight: 500;
+  font-size: 3em;
+  color: hsl(230, 17%, 14%);
+  display: block;
+}
+
+.container .followers .header .title p {
+  font-size: 12px;
+  font-weight: bold;
+  color: hsl(228, 12%, 44%);
+}
+
+/* ! */
+
+.container .overview .subtitle {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.container .overview .subtitle h3 {
+  font-size: 28px;
+  color: hsl(228, 12%, 44%);
+}
+
+.container .overview {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
+  height: 100%;
+  margin: 50px;
+  padding-bottom: 20px;
+}
+
+.container .overview .mincard {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 250px;
+  height: 125px;
+  border-radius: 4px;
+  margin: 10px 0;
+  background: hsl(227, 47%, 96%);
+}
+
+.container .overview .mincard:hover {
+  background: hsl(0, 0%, 81%);
+}
+
+.container .overview .mincard .text {
+  padding: 0 10px;
+  display: grid;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.container .overview .mincard .img {
+  display: grid;
+  justify-items: right;
+  align-items: center;
+  margin-right: 5%;
+}
+
+.container .overview .mincard .text p:nth-child(1) {
+  color: hsl(228, 12%, 44%);
+}
+
+.container .overview .mincard .text p:nth-child(2) {
+  color: hsl(230, 17%, 14%);
+  font-size: 28px;
+  font-weight: bolder;
+}
+
+.container .footer {
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  font-size: 14px;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: hsl(225, 100%, 98%);
+  margin-top: 10px;
+}
+
+.container .footer p {
+  text-align: center;
+}
+.container .footer p a {
+  text-decoration: none;
+  color: hsl(228, 12%, 44%);
+  /* padding: 0 5px; */
+  font-size: 14px;
+}
+
+.container .footer p a:hover {
+  opacity: 0.7;
+}
+
+/* ! Button dark mode  */
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 20px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: hsl(230, 22%, 74%);
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.dark .slider {
+  background: linear-gradient(to right, hsl(210, 78%, 56%), hsl(146, 68%, 55%));
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 16px;
+  top: 2px;
+  left: 3px;
+  bottom: 2px;
+  background-color: #000;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.dark input:checked + .slider {
+  background: linear-gradient(to right, hsl(210, 78%, 56%), hsl(146, 68%, 55%));
+}
+*/ input:focus + .slider {
+  box-shadow: 0 0 1px #2196f3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(19px);
+  -ms-transform: translateX(19px);
+  transform: translateX(19px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+/* ? Dark theme */
+
+.dark {
+  background: hsl(230, 17%, 14%);
+}
+
+.dark::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 220px;
+  background: hsl(232, 19%, 15%);
+}
+
+.dark .container .followers .card {
+  background: hsl(228, 28%, 20%);
+}
+
+.dark .container .overview .mincard {
+  background: hsl(228, 28%, 20%);
+}
+
+.dark .container .followers .header .title p,
+.dark .container .followers .card p,
+span,
+.dark .container .overview .mincard p:nth-child(1) {
+  color: hsl(228, 34%, 66%);
+}
+
+.dark .container .followers .header .title p span,
+.dark .container .followers .card h2,
+.dark .container .overview .subtitle h3,
+.dark .container .overview .mincard p:nth-child(2) {
+  color: hsl(0, 0%, 100%);
+}
+
+.container .overview .mincard .text p:nth-child(2) {
+  margin-bottom: 10%;
+  margin: 10px;
+}
+
+.dark .container .footer {
+  background: hsl(232, 19%, 15%);
+}
+
+.dark .container .footer a {
+  color: hsl(228, 34%, 66%);
+}
+
+@media (max-width: 625px) {
+  .container .followers,
+  .container .overview {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .container .followers .card,
+  .container .overview .mincard {
+    margin: 10px;
+  }
+
+  .container .followers .header,
+  .container .overview .subtitle {
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 6%;
+  }
+}
+
+@media (max-width: 538px) {
+  .container .followers .header {
+    flex-direction: column;
+    justify-content: center;
+    width: 80%;
+  }
+
+  .container .overview .subtitle {
+    width: 80%;
+  }
+
+  .container .followers .card,
+  .container .overview .mincard {
+    width: 80%;
+  }
+
+  .container .followers .header .title {
+    width: auto;
+  }
+  .container .followers .header .button {
+    width: 97%;
+    justify-content: space-between;
+  }
+}
+
+@media (max-width: 375px) {
+  .container .followers,
+  .container .overview {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .container .followers .header,
+  .container .overview .subtitle {
+    width: 90%;
+  }
+
+  .container .followers .card,
+  .container .overview .mincard {
+    width: 90%;
+  }
+
+  .container .followers .header .title {
+    border-bottom: 1px solid hsla(0, 0%, 67%, 0.219);
+  }
+
+  .container .followers .header .title p span {
+    font-size: 23px;
+  }
+
+  .container .followers .header .button {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .container .followers .header .button p {
+    font-weight: bold;
+    font-size: 16px;
+  }
+
+  .container .overview .subtitle h3 {
+    font-size: 18px;
+  }
+
+  .container .overview .mincard:nth-child(9) {
+    margin-bottom: 40px;
+  }
+}
